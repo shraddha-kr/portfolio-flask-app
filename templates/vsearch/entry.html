@@ -1,0 +1,22 @@
+{% extends './base.html' %}
+  {% block body %}
+
+    <div id="vsapp">
+      <div class="vsappcontainer">
+        <form method='POST' action='/search4'>
+
+          <p><label for="fname">Enter the phrase to search for vowels</label></p>
+          </br>
+          <label for="phrase">Phrase</label>
+          <input type="text" id="phrase" name="phrase" placeholder="Enter a Phrase.." required>
+
+          <label for="letter">Vowels</label>
+          <input type="text" id="letters" name="letters" placeholder="aeiou" readonly>
+
+          <p><input value='SUBMIT' type='SUBMIT'></p>
+          <img src="../static/vsearch/logo_vsbckgrnd.png">
+        </form>
+      </div>
+    </div>
+
+  {% endblock %}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html id="top">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Professional portfolio">
+  	  <meta name="keywords" content="Professional portfolio">
+    	<meta name="author" content="Shraddha">
+
+      <title>{{ the_title }}</title>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+      <header>
+        <div class="headercontainer">
+          <div id="branding">
+            <h1><span class="highlight">{{ the_title }}</span></h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/index" class="fa fa-home"></a></li>
+              <li><a href="https://linkedin.com/in/shraddha-kharangate-12522a64" class="fa fa-linkedin"></a></li>
+              <li><a href="https://github.com/shraddha-kr" class="fa fa-github"></a></li>
+              <li><a href="/contactme" class="fa fa-envelope"></a></li>
+              <li><a href="https://www.instagram.com/shraddharkharangate/" class="fa fa-instagram"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!--  <div class="bodycontainer"> -->
+          {% block body %}
+
+          {% endblock %}
+      <!--  </div> -->
+      <footer>
+        <p><a href="#top" class="fa fa-arrow-up"></a></p>
+      </footer>
+    </body>
+</html>
